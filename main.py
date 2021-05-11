@@ -6,7 +6,7 @@ root.title("Digital Clock")
 
 def clock():
 	data=input('Enter a value:')
-	timestring=strftime('%H:%M:%S%p')
+	timestring=strftime('%H:%M:%S%p:%a')
 	label.config(text=timestring)
 	label.after(1000,clock)
 	 	
