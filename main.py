@@ -5,11 +5,9 @@ root=Tk()
 root.title("Digital Clock")
 
 def clock():
-	data=input('Enter a value:')
-	timestring=strftime('%H:%M:%S%p:%a')
+	timestring=strftime('%H:%M:%S%p\nDay: %a')
 	label.config(text=timestring)
 	label.after(1000,clock)
-	 	
 
 label=Label(root, font=("Digital-7",100), background = input('Background:'), foreground = input('Foreground:'))
 label.pack(anchor='center')
