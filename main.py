@@ -5,10 +5,10 @@ from time import strftime
 daydata={
 	'Mon': 'Monday',
 	'Tue': 'Tuesday',
-	'Wed': 'Wednesday'
+	'Wed': 'Wednesday',
+	'Thu': 'Thursday'
 }
 formattedday = daydata[strftime('%a')]
-print(formattedday)
 
 def clock():
     timestring=strftime(f'%H:%M:%S%p\nDay: {formattedday}')
