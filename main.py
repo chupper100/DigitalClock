@@ -8,10 +8,10 @@ daydata={
 	'Wed': 'Wednesday',
 	'Thu': 'Thursday'
 }
-formattedday = daydata[strftime('%a')]
+day = daydata[strftime('%a')]
 
 def clock():
-    timestring=strftime(f'%H:%M:%S%p\nDay: {formattedday}')
+    timestring=strftime(f'%H:%M:%S%p\nDay: {day}')
     label.config(text=timestring)
     label.after(1000,clock)
 
