@@ -65,3 +65,4 @@ label=Label(root, font=("Digital-7",100), background = input('Background:'), for
 label.pack(anchor='center')
 clock()
 root.mainloop()
+#End
